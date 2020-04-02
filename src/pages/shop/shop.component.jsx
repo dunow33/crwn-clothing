@@ -1,20 +1,13 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-import CollectionPreview from '../../components/collection-preview/collection-preview.component';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 
-const ShopPage = ({ collections }) => {
-	render() {
-		const { collections } = this.state;
+const ShopPage = ({ match }) => (
+	<div className='shop-page'>
+		<
+	</div>
+);
 
-		return (<div className='shop-page'>
-				{
-					collections.map(({id, ...otherCollectionProps }) => (
-						<CollectionPreview key={ id } { ...otherCollectionProps }/>
-					))
-				}
-			</div>);
-		}
-
-}
 
 export default ShopPage;
