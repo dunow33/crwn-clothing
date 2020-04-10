@@ -18,7 +18,6 @@ import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
 
 
 class App extends React.Component {
-
   unsubscribeFromAuth = null;
 
   componentDidMount() {
